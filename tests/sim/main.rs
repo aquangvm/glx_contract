@@ -1,8 +1,8 @@
 pub use near_sdk::json_types::{Base64VecU8, ValidAccountId, WrappedDuration, U64};
 
-use near_sdk::{serde_json::json, AccountId};
+use near_sdk::{serde_json::json, AccountId, env::block_timestamp};
 use near_sdk_sim::{
-    deploy, init_simulator, to_yocto, ContractAccount, UserAccount, STORAGE_AMOUNT, call, view,
+    deploy, init_simulator, to_yocto, ContractAccount, UserAccount, STORAGE_AMOUNT, call, view, block,
 };
 use add_node::ContractContract as nodeContract;
 use voting::ContractContract as votingContract;
@@ -11,8 +11,8 @@ near_sdk_sim::lazy_static_include::lazy_static_include_bytes! {
     NODE_BYTES => "./out/manager_node.wasm",
     VOTING_BYTES => "./out/voting.wasm",
 }
-
-pub fn init() -> (UserAccount,UserAccount,UserAccount,UserAccount,UserAccount) {
+#[test]
+pub fn test_all()  {
   let root = init_simulator(Node);
   
   let admin = root.create_user("admin".to_string(),to_yocto("100"));
@@ -44,15 +44,8 @@ pub fn init() -> (UserAccount,UserAccount,UserAccount,UserAccount,UserAccount) {
     root,
     node.new()
   ).assert_success();
-  (root, voting, node,admin,organization)
-}
 
-
-#[test]
-fn contract_manager_node() {
-    let (root, voting, node, admin, organization) = init();
-
-    // set key admin
+   // set key admin
     call!(
         root,
         node.set_key_admin(admin.account_id())
@@ -69,11 +62,111 @@ fn contract_manager_node() {
     assert_eq!(true, check_admin);
 
 
-    // // add organization
-    // call!(
-    //     root,
-    //     node.
-    // )
+    // add organization
+    call!(
+        root,
+        node.add_organization(organization.account_id())
+    ).assert_success();
 
+    // add node
+    call!(
+        root,
+        node.add_node("node1".account_id())
+    ).assert_success();
+
+    // set contract manager node
+    call!(
+        root,
+        voting.set_contract_manager_node(node.account_id())
+    ).assert_success();
+
+    // add offer
+    call!(
+        root,
+        voting.add_offer("offer_1".to_string(), block_timestamp(), block_timestamp() + 100000, 50)
+    ).assert_success();
+
+
+    println!("infor offer {:?}" , view!(
+        root,
+        voting.list_offer()
+    ).unwrap_json());
+
+    // update offer
+
+    call!(
+        root,
+        voting.update_offer(0, "offer_1_update".to_string(), block_timestamp(), block_timestamp() + 100000, 60)
+    ).assert_success();
+
+    println!("infor offer update {:?}", view!(
+        root,
+        voting.list_offer()
+    ).unwrap_json());
+
+    // remove offer
+    call!(
+        root,
+        voting.remove_offer(0)
+    ).assert_success();
+
+    println!("infor offer before remove {:?}", view!(
+        root,
+        voting.list_offer()
+    ).unwrap_json());
+
+
+    call!(
+        root,
+        voting.add_offer("offer_1".to_string(), block_timestamp(), block_timestamp() + 100000, 50)
+    ).assert_success();
+
+    println!("infor offer before add offer  {:?}", view!(
+        root,
+        voting.list_offer()
+    ).unwrap_json());
+
+
+    // active offer
+
+    call!(
+        root,
+        voting.active_offer(1)
+    ).assert_success();  
+
+   println!("infor offer after active offer  {:?}", view!(
+        root,
+        voting.list_offer()
+    ).unwrap_json());
+
+    
+
+    // vote
+
+    call!(
+        root,
+        voting.vote(1)
+    ).assert_success();
+
+    println!("infor offer  after actove vote {:?}", view!(
+        root,
+        voting.list_offer()
+    ).unwrap_json());
+
+    // close vote
+    call!(
+        root,
+        voting.close_vote(1)
+    ).assert_success();
+
+    println!("infor offer affter close vote  {:?}", view!(
+        root,
+        voting.list_offer()
+    ).unwrap_json());
+  
 }
+
+
+
+
 

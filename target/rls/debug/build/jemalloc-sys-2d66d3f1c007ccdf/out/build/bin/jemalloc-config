@@ -1,0 +1,83 @@
+#!/bin/sh
+
+usage() {
+	cat <<EOF
+Usage:
+  d:Workdinarglx_contracttargetrlsdebugbuildjemalloc-sys-2d66d3f1c007ccdfout/bin/jemalloc-config <option>
+Options:
+  --help | -h  : Print usage.
+  --version    : Print jemalloc version.
+  --revision   : Print shared library revision number.
+  --config     : Print configure options used to build jemalloc.
+  --prefix     : Print installation directory prefix.
+  --bindir     : Print binary installation directory.
+  --datadir    : Print data installation directory.
+  --includedir : Print include installation directory.
+  --libdir     : Print library installation directory.
+  --mandir     : Print manual page installation directory.
+  --cc         : Print compiler used to build jemalloc.
+  --cflags     : Print compiler flags used to build jemalloc.
+  --cppflags   : Print preprocessor flags used to build jemalloc.
+  --cxxflags   : Print C++ compiler flags used to build jemalloc.
+  --ldflags    : Print library flags used to build jemalloc.
+  --libs       : Print libraries jemalloc was linked against.
+EOF
+}
+
+prefix="d:\Work\dinar\glx_contract\target\rls\debug\build\jemalloc-sys-2d66d3f1c007ccdf\out"
+exec_prefix="d:\Work\dinar\glx_contract\target\rls\debug\build\jemalloc-sys-2d66d3f1c007ccdf\out"
+
+case "$1" in
+--help | -h)
+	usage
+	exit 0
+	;;
+--version)
+	echo "0.0.0-0-g0000000000000000000000000000000000000000"
+	;;
+--revision)
+	echo "2"
+	;;
+--config)
+	echo "--disable-cxx --with-jemalloc-prefix=_rjem_ --with-private-namespace=_rjem_ --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --prefix=d:\Work\dinar\glx_contract\target\rls\debug\build\jemalloc-sys-2d66d3f1c007ccdf\out build_alias=x86_64-w64-mingw32 host_alias=x86_64-w64-mingw32 CC=gcc.exe 'CFLAGS=-O0 -ffunction-sections -fdata-sections -g -fno-omit-frame-pointer -m64 -Wall' 'LDFLAGS=-O0 -ffunction-sections -fdata-sections -g -fno-omit-frame-pointer -m64 -Wall' 'CPPFLAGS=-O0 -ffunction-sections -fdata-sections -g -fno-omit-frame-pointer -m64 -Wall'"
+	;;
+--prefix)
+	echo "d:\Work\dinar\glx_contract\target\rls\debug\build\jemalloc-sys-2d66d3f1c007ccdf\out"
+	;;
+--bindir)
+	echo "d:Workdinarglx_contracttargetrlsdebugbuildjemalloc-sys-2d66d3f1c007ccdfout/bin"
+	;;
+--datadir)
+	echo "d:\Work\dinar\glx_contract\target\rls\debug\build\jemalloc-sys-2d66d3f1c007ccdf\out/share"
+	;;
+--includedir)
+	echo "d:Workdinarglx_contracttargetrlsdebugbuildjemalloc-sys-2d66d3f1c007ccdfout/include"
+	;;
+--libdir)
+	echo "d:Workdinarglx_contracttargetrlsdebugbuildjemalloc-sys-2d66d3f1c007ccdfout/lib"
+	;;
+--mandir)
+	echo "d:\Work\dinar\glx_contract\target\rls\debug\build\jemalloc-sys-2d66d3f1c007ccdf\out/share/man"
+	;;
+--cc)
+	echo "gcc.exe"
+	;;
+--cflags)
+	echo "-std=gnu11 -Wall -Wsign-compare -Wundef -Wno-format-zero-length -pipe -g3 -O3 -funroll-loops -O0 -ffunction-sections -fdata-sections -g -fno-omit-frame-pointer -m64 -Wall"
+	;;
+--cppflags)
+	echo "-O0 -ffunction-sections -fdata-sections -g -fno-omit-frame-pointer -m64 -Wall -D_REENTRANT"
+	;;
+--cxxflags)
+	echo ""
+	;;
+--ldflags)
+	echo "-O0 -ffunction-sections -fdata-sections -g -fno-omit-frame-pointer -m64 -Wall "
+	;;
+--libs)
+	echo ""
+	;;
+*)
+	usage
+	exit 1
+esac

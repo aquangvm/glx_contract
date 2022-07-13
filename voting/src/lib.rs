@@ -116,12 +116,6 @@ impl Contract {
         offer.status = Status::ACTIVE;
 
         self.list_offer.insert(&offer_id, &offer);
-       // self.list_offer.get(&offer_id).unwrap().status
-        // let mut status1 = self.list_offer.get(&offer_id).unwrap().status;
-        // status1 = Status::ACTIVE;
-
-
-       // assert!(self.list_offer.get(&offer_id.clone()).unwrap().status == Status::ACTIVE, "sai roi");
 
     }
 
@@ -134,7 +128,10 @@ impl Contract {
         assert!(block_timestamp() >= self.list_offer.get(&offer_id.clone()).unwrap().time_start, "time out");
         assert!(block_timestamp() <= self.list_offer.get(&offer_id.clone()).unwrap().time_end, "time out");
         
-        self.list_offer.get(&offer_id.clone()).unwrap().total_vote = self.list_offer.get(&offer_id.clone()).unwrap().total_vote + 1;
+        let mut offer =  self.list_offer.get(&offer_id.clone()).unwrap();
+        offer.total_vote = offer.total_vote + 1;
+
+        self.list_offer.insert(&offer_id, &offer);
     }
 
     pub fn internal_set_contract_manager_node (&mut self, account_contract: AccountId) {
@@ -212,6 +209,10 @@ impl Contract {
         
     }
 
+     pub fn set_contract_manager_node (&mut self, account_contract: AccountId) {
+        self.internal_set_contract_manager_node(account_contract);
+    }
+
     #[private]
     pub fn my_callback(&mut self) {
      match env::promise_result(0) {
@@ -244,9 +245,9 @@ mod tests {
 
     fn get_context_admin() -> VMContextBuilder {
         let mut builder = VMContextBuilder::new();
-        builder.predecessor_account_id(to_valid_account("admin.near"));
-        builder.current_account_id(to_valid_account("admin.near"));
-        builder.signer_account_id(to_valid_account("admin.near"));
+        builder.current_account_id(accounts(0))
+        .signer_account_id(accounts(0))
+        .predecessor_account_id(accounts(0));
         builder
     }
 
