@@ -1,0 +1,27 @@
+cargo:rerun-if-changed=src/trap/helpers.c
+TARGET = Some("x86_64-pc-windows-gnu")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-pc-windows-gnu")
+CC_x86_64-pc-windows-gnu = None
+CC_x86_64_pc_windows_gnu = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-pc-windows-gnu = None
+CFLAGS_x86_64_pc_windows_gnu = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+running: "gcc.exe" "-O0" "-ffunction-sections" "-fdata-sections" "-g" "-fno-omit-frame-pointer" "-m64" "-Wall" "-Wextra" "-o" "d:\\Work\\add_node_and_voting\\target\\rls\\debug\\build\\wasmer-vm-f57e18438636db90\\out\\src/trap/helpers.o" "-c" "src/trap/helpers.c"
+exit code: 0
+AR_x86_64-pc-windows-gnu = None
+AR_x86_64_pc_windows_gnu = None
+HOST_AR = None
+AR = None
+running: "ar" "cq" "d:\\Work\\add_node_and_voting\\target\\rls\\debug\\build\\wasmer-vm-f57e18438636db90\\out\\libhelpers.a" "d:\\Work\\add_node_and_voting\\target\\rls\\debug\\build\\wasmer-vm-f57e18438636db90\\out\\src/trap/helpers.o"
+exit code: 0
+running: "ar" "s" "d:\\Work\\add_node_and_voting\\target\\rls\\debug\\build\\wasmer-vm-f57e18438636db90\\out\\libhelpers.a"
+exit code: 0
+cargo:rustc-link-lib=static=helpers
+cargo:rustc-link-search=native=d:\Work\add_node_and_voting\target\rls\debug\build\wasmer-vm-f57e18438636db90\out

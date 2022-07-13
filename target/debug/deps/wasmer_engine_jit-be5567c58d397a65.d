@@ -1,0 +1,15 @@
+d:\Work\add_node_and_voting\target\debug\deps\wasmer_engine_jit-be5567c58d397a65.rmeta: C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\lib.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\artifact.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\builder.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\code_memory.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\engine.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\link.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\serialize.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\unwind\mod.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\unwind\windows_x64.rs
+
+d:\Work\add_node_and_voting\target\debug\deps\wasmer_engine_jit-be5567c58d397a65.d: C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\lib.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\artifact.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\builder.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\code_memory.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\engine.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\link.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\serialize.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\unwind\mod.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\unwind\windows_x64.rs
+
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\lib.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\artifact.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\builder.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\code_memory.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\engine.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\link.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\serialize.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\unwind\mod.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmer-engine-jit-1.0.2\src\unwind\windows_x64.rs:
+
+# env-dep:CARGO_PKG_VERSION=1.0.2

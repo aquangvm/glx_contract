@@ -1,0 +1,16 @@
+d:\Work\add_node_and_voting\target\rls\debug\deps\wasmtime_jit-cb56fc7532adf86d.rmeta: C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\lib.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\code_memory.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\compiler.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\instantiate.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\link.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\object.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\unwind.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\native.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\trampoline.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\unwind\winx64.rs
+
+d:\Work\add_node_and_voting\target\rls\debug\deps\wasmtime_jit-cb56fc7532adf86d.d: C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\lib.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\code_memory.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\compiler.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\instantiate.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\link.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\object.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\unwind.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\native.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\trampoline.rs C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\unwind\winx64.rs
+
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\lib.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\code_memory.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\compiler.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\instantiate.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\link.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\object.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\unwind.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\native.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\trampoline.rs:
+C:\Users\EdsoLabs\.cargo\registry\src\github.com-1ecc6299db9ec823\wasmtime-jit-0.20.0\src\unwind\winx64.rs:
+
+# env-dep:CARGO_PKG_VERSION=0.20.0
